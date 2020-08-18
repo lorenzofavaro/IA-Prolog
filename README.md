@@ -8,3 +8,7 @@ Un sistema intelligente è collocato in uno spazio di n righe ed m colonne, in c
 Il sistema può muoversi nelle quattro direzioni (nord, sud, est, ovest) e non in diagonale e, ovviamente, non può raggiungere una cella contenente un ostacolo.
 
 Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli ostacoli, uscite).
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/lorenzofavaro/IA-Prolog/master/labyrinths/maze10.png"/>
+</p>
