@@ -10,5 +10,5 @@ Il sistema può muoversi nelle quattro direzioni (nord, sud, est, ovest) e non i
 Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli ostacoli, uscite).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lorenzofavaro/IA-Prolog/master/labyrinths/maze10.png"/>
+  <img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze10.png"/>
 </p>
