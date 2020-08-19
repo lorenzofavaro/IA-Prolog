@@ -47,7 +47,7 @@ Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli 
   - `depth_search/4` effettua la DFS attenendosi al limite di profondità attuale.
 
 ## Risultati ottenuti
-Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe. Qui sotto riportate:
+Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe qui sotto riportate:
 
 #### Maze7
 <img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze7_mini.png"/>
@@ -66,6 +66,12 @@ Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe. Qui
 
 #### Maze14
 <img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze14_mini.png"/>
+
+Come previsto, i risultati ottenuti mostrano la supremazia dell'algoritmo A*, a prescindere dalla disposizione degli ostacoli e dalla dimensione della mappa.
+
+Al secondo posto troviamo IDA*, che a seconda della complessità della mappa varia il proprio tempo di esecuzione in maniera pressochè accettabile.
+
+Infine come ci aspettiamo Iterative Deepening, che per sua natura, essendo un algoritmo blind, ha tempi di esecuzione nettamente maggiori. Inoltre degrada le sue prestazioni in maniera importante all'aumentare delle dimensioni della mappa.
 
 
 |          | A*    | IDA*      | Iterative Deepening |
