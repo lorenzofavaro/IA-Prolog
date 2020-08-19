@@ -48,9 +48,24 @@ Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli 
 
 ## Risultati ottenuti
 Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe. Qui sotto riportate:
-<p align="center">
-  <img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze10.png"/>
-</p>
+
+#### Maze7
+<img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze7_mini.png"/>
+
+#### Maze10
+<img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze10_mini.png"/>
+
+#### Maze10_1
+<img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze10_1_mini.png"/>
+
+#### Maze10_2
+<img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze10_2_mini.png"/>
+
+#### Maze10_3
+<img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze10_3_mini.png"/>
+
+#### Maze14
+<img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze14_mini.png"/>
 
 
 |          | A*    | IDA*      | Iterative Deepening |
