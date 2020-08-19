@@ -47,3 +47,13 @@ Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli 
   - `depth_search/4` effettua la DFS attenendosi al limite di profondità attuale.
 
 ## Risultati ottenuti
+Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe. Qui sotto riportate
+
+|          | A*    | IDA*      | Iterative Deepening |
+|----------|-------|-----------|---------------------|
+| maze7    | 0 sec | 0 sec     | 0 sec               |
+| maze10   | 0 sec | 0.6 sec   | 2.81 sec            |
+| maze10_1 | 0 sec | 72.21 sec | 172.78 sec          |
+| maze10_2 | 0 sec | 0 sec     | 0 sec               |
+| maze10_3 | 0 sec | 3.22 sec  | 31.89 sec           |
+| maze14   | 0 sec | 0 sec     | > 600 sec           |
