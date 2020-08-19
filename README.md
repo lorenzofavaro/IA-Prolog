@@ -26,8 +26,12 @@ Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli 
   - `move(action, S, S1)` restituisce la nuova posizione `S1` effettuando lo spostamento derivato da `action` a partire dalla posizione di partenza `S`.
 - `utils.pl` specifica ulteriori predicati.
   - `heuristic(S, S1, Distance)` calcola il valore di euristica `Distance` mediante la distanza di Manhattan tra le posizioni `S` ed `S1`
-  - `comparator(`
 - `load_maze.pl` effettua la load della mappa selezionata.
-- `a_star.pl` algoritmo di ricerca A*.
-- `iterative_deepening.pl` algoritmo di ricerca Iterative Deepening.
-- `ida_star.pl` algoritmo di ricerca Iterative Deepening A*.
+
+## Algoritmi di ricerca
+- `a_star.pl` implementa l'algoritmo di ricerca A*. La struttura dati principale è la lista `[[Actions], pos(X, Y), f(n)]` che contiene per ogni tassello esplorato del labirinto le azioni necessarie, la sua posizione e la sua funzione di costo. L'algoritmo è implementato da 4 predicati:
+  - `a_star/1` dà inizio all'algoritmo, controllando i parametri forniti (come la posizione di inizio e fine) e stampa la soluzione
+  - `a_star_search/3` è il predicato che implementa la ricerca; ha 3 parametri, il primo è la lista dei nodi di frontiera, il secondo è la lista di nodi già visitati, mentre il terzo è la lista di azioni che rappresenta la soluzione
+  - `expand/3` genera i figli di un nodo, controllando tutte le azioni permesse in quel nodo
+  - `add/3` concatena in modo ordinato (in base alla funzione di costo) i nodi generati da `expand/3` a quelli già presenti, creando la nuova frontiera
+
