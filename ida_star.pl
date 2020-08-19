@@ -1,4 +1,4 @@
-:- ['load_maze.pl', 'actions.pl', 'utils.pl'].
+:- ['load_maze.pl', 'utils.pl'].
 
 ida_star:-
     start(S), acceptable(S),

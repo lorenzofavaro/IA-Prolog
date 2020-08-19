@@ -1,4 +1,4 @@
-:- ['load_maze.pl', 'actions.pl', 'utils.pl'].
+:- ['load_maze.pl', 'utils.pl'].
 
 a_star:-
     start(S), acceptable(S),
@@ -28,8 +28,8 @@ expand([A,S,FN], ClosedSet, ExpandedNodes):-
          ExpandedNodes).
     
 add(ExpandedNodes, OldNodes, Sorted):-
-    append(ExpandedNodes, OldNodes, Concatenati),
-    predsort(comparator, Concatenati, Sorted).
+    append(ExpandedNodes, OldNodes, Concatenated),
+    predsort(comparator, Concatenated, Sorted).
 
 gn([_,S,FN], GN):-
     final(F),

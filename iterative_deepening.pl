@@ -1,4 +1,4 @@
-:- ['load_maze.pl', 'actions.pl'].
+:- ['load_maze.pl'].
 
 iterative_deepening:-
     start(S), acceptable(S),
