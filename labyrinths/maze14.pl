@@ -3,3 +3,5 @@ num_columns(14).
 
 start(pos(1,1)).
 final(pos(14,14)).
+
+occupied(pos(7,7)).

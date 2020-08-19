@@ -1,2 +1,2 @@
 % Load labirinto scelto
-:- ['labyrinths/maze7.pl', 'actions.pl'].
+:- ['labyrinths/maze14.pl', 'actions.pl'].
