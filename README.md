@@ -47,7 +47,11 @@ Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli 
   - `depth_search/4` effettua la DFS attenendosi al limite di profondità attuale.
 
 ## Risultati ottenuti
-Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe. Qui sotto riportate
+Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe. Qui sotto riportate:
+<p align="center">
+  <img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze10.png"/>
+</p>
+
 
 |          | A*    | IDA*      | Iterative Deepening |
 |----------|-------|-----------|---------------------|
