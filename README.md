@@ -67,12 +67,7 @@ Il testing dei vari algoritmi di ricerca è stato effettuato su varie mappe qui 
 #### Maze14
 <img src="https://github.com/lorenzofavaro/IA-Prolog/blob/master/labyrinths/maze14_mini.png"/>
 
-Come previsto, i risultati ottenuti mostrano la supremazia dell'algoritmo A*, a prescindere dalla disposizione degli ostacoli e dalla dimensione della mappa.
-
-Al secondo posto troviamo IDA*, che a seconda della complessità della mappa varia il proprio tempo di esecuzione in maniera pressochè accettabile.
-
-Infine come ci aspettiamo Iterative Deepening, che per sua natura, essendo un algoritmo blind, ha tempi di esecuzione nettamente maggiori. Inoltre degrada le sue prestazioni in maniera importante all'aumentare delle dimensioni della mappa.
-
+### Tempi di esecuzione
 
 |          | A*    | IDA*      | Iterative Deepening |
 |----------|-------|-----------|---------------------|
@@ -82,3 +77,9 @@ Infine come ci aspettiamo Iterative Deepening, che per sua natura, essendo un al
 | maze10_2 | 0 sec | 0 sec     | 0 sec               |
 | maze10_3 | 0 sec | 3.22 sec  | 31.89 sec           |
 | maze14   | 0 sec | 0 sec     | > 600 sec           |
+
+Come previsto, i risultati ottenuti mostrano la supremazia dell'algoritmo A*, a prescindere dalla disposizione degli ostacoli e dalla dimensione della mappa.
+
+Al secondo posto troviamo IDA*, che a seconda della complessità della mappa varia il proprio tempo di esecuzione in maniera pressochè accettabile.
+
+Infine come ci aspettiamo Iterative Deepening, che per sua natura, essendo un algoritmo blind, ha tempi di esecuzione nettamente maggiori. Inoltre degrada le sue prestazioni in maniera importante all'aumentare delle dimensioni della mappa.
