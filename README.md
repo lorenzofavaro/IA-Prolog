@@ -26,6 +26,7 @@ Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli 
   - `move(action, S, S1)` restituisce la nuova posizione `S1` effettuando lo spostamento derivato da `action` a partire dalla posizione di partenza `S`.
 - `utils.pl` specifica ulteriori predicati.
   - `heuristic(S, S1, Distance)` calcola il valore di euristica `Distance` mediante la distanza di Manhattan tra le posizioni `S` ed `S1`
+  - `comparator(`
 - `load_maze.pl` effettua la load della mappa selezionata.
 - `a_star.pl` algoritmo di ricerca A*.
 - `iterative_deepening.pl` algoritmo di ricerca Iterative Deepening.
