@@ -29,15 +29,18 @@ Il sistema conosce la configurazione del labirinto (dimensioni, posizione degli 
 - `load_maze.pl` effettua la load della mappa selezionata.
 
 ## Algoritmi di ricerca
+### A*
 - `a_star.pl` implementa l'algoritmo di ricerca A*. La struttura dati principale è la lista `[[Actions], pos(X, Y), f(n)]` che contiene per ogni tassello esplorato del labirinto le azioni necessarie, la sua posizione e la sua funzione di costo. L'algoritmo è implementato da 4 predicati:
   - `a_star` dà inizio all'algoritmo, controllando i parametri forniti (come la posizione di inizio e fine) e stampa la soluzione.
   - `a_star_search/3` è il predicato che implementa la ricerca A*; ha 3 parametri, il primo è la lista dei nodi di frontiera, il secondo è la lista di nodi già visitati, mentre il terzo è la lista di azioni che rappresenta la soluzione.
   - `expand/3` genera i figli di un nodo, controllando tutte le azioni permesse in quel nodo.
   - `add/3` concatena in modo ordinato (in base alla funzione di costo) i nodi generati da `expand/3` a quelli già presenti, creando la nuova frontiera.
+### IDA*
 - `ida_star.pl` implementa l'algoritmo di ricerca IDA*. Per la gestione del limite asserisce nuovi fatti dinamicamente. Si basa su 3 predicati:
   - `ida_star` dà inizio all'algoritmo, controllando i parametri forniti (come la posizione di inizio e fine).
   - `ida_main/3` utilizza `ida_search/5` per la ricerca del percorso e permette di incrementare il limite di volta in volta, nel caso una soluzione non sia stata ancora trovata.
   - `ida_search/5` è il predicato che implementa la ricerca IDA*.
+### Iterative Deepening
 - `iterative_deepening.pl` implementa l'algoritmo di ricerca Iterative Deepening. È costituito da 3 predicati:
   - `iterative_deepening` dà inizio all'algoritmo, controllando i parametri forniti (come la posizione di inizio e fine) e setta il limite massimo di profondità a `Rows` x `Columns`.
   - `iterative_deepening_search/5` incrementa il limite di volta in volta, nel caso una soluzione non sia stata ancora trovata.
